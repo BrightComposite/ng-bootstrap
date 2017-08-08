@@ -82,13 +82,13 @@ var Positioning = (function () {
         };
         switch (placementPrimary) {
             case 'top':
-                targetElPosition.top = hostElPosition.top - targetElement.offsetHeight;
+                targetElPosition.top = hostElPosition.top - targetElBCR.height;
                 break;
             case 'bottom':
                 targetElPosition.top = hostElPosition.top + hostElPosition.height;
                 break;
             case 'left':
-                targetElPosition.left = hostElPosition.left - targetElement.offsetWidth;
+                targetElPosition.left = hostElPosition.left - targetElBCR.width;
                 break;
             case 'right':
                 targetElPosition.left = hostElPosition.left + hostElPosition.width;
